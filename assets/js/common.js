@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', function() {
+	const navLinks = document.querySelectorAll('#nav > ul > li > a');
+
+	navLinks.forEach(function(link) {
+		link.addEventListener('click', function(event) {
+			const parentLi = this.parentElement;
+			const siblingUl = this.nextElementSibling;
+
+			document.querySelectorAll('#nav > ul > li').forEach(function(li) {
+				if (li !== parentLi) {
+					li.classList.remove('open');
+				}
+			});
+			if (siblingUl) {
+				event.preventDefault();
+				parentLi.classList.toggle('open');
+			} else {
+				parentLi.classList.add('open');
+			}
+		});
+	});
+});
 
 //datepicker 호출 yyyy mm dd
 document.addEventListener("DOMContentLoaded", function () {

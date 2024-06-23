@@ -52,52 +52,52 @@
         </div>
         <div id="nav">
             <ul>
-                <li class="active"><a href="javascript:;"><img src="../../assets/images/nav_icon_basic.svg" class="nav_icon"><span>기본관리</span></a>
+                <li class="active open"><a href="javascript:;"><img src="../../assets/images/nav_icon_basic.svg" class="nav_icon"><span>기본관리</span></a>
                     <ul>
                         <li><a href="../basic/server_list.html" class="active">서버관리</a></li> 
-                        <li><a href="../basic/chanel_list.html">채널괄리</a></li>
+                        <li><a href="../basic/chanel_list.html">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_server.svg" class="nav_icon"><span>서버설정</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_professional.svg" class="nav_icon"><span>전문관리</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_demon.svg" class="nav_icon"><span>데몬관리</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_data.svg" class="nav_icon"><span>데이터관리</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_statistics.svg" class="nav_icon"><span>통계관리</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
                 <li><a href="javascript:;"><img src="../../assets/images/nav_icon_operation.svg" class="nav_icon"><span>운영관리</span></a>
                     <ul>
                         <li><a href="javascript:;">서버관리</a></li>
-                        <li><a href="javascript:;">채널괄리</a></li>
+                        <li><a href="javascript:;">채널관리</a></li>
                         <li><a href="javascript:;">그룹관리</a></li>
                     </ul>
                 </li>
@@ -642,7 +642,7 @@
                             <div class="r">
                                 <button type="button" class="btn btn_md btn_white" onclick="openLayer('#chanel_registration')"><img src="../../assets/images/btn_icon_add.svg">추가</button>
                                 <button type="button" class="btn btn_md btn_white"><img src="../../assets/images/btn_icon_folder.svg">불러오기</button>
-                                <button type="button" class="btn btn_md btn_white"><img src="../../assets/images/btn_icon_upload.svg">엑셀업로드</button>
+                                <button type="button" class="btn btn_md btn_white" onclick="openLayer('#excel_upload')"><img src="../../assets/images/btn_icon_upload.svg">엑셀업로드</button>
                                 <button type="button" class="btn btn_md btn_white"><img src="../../assets/images/btn_icon_download.svg">다운로드</button>
                                 <button type="button" class="btn btn_md btn_submit"><img src="../../assets/images/btn_icon_reset2.svg">동기화</button>
                                 <button type="button" class="btn btn_md btn_submit"><img src="../../assets/images/btn_icon_save.svg">저장</button>
@@ -1028,358 +1028,358 @@
             label_control 전체 체크 컨트롤
             -->
             <div class="table_list table_line thead_fixed thead_light table_nowrap label_control design_scroll" data-simplebar style="max-height:59.6rem;">
-            <table>
-                <thead>
-                    <tr>
-                        <th>선택
-                            <!-- 
-                            <label class="checkbox single"><input type="checkbox" class="check_all"><span class="ck_icon"></span></label>
-                            -->
-                        </th>
-                        <th>채널명</th>
-                        <th>프로세스 타입</th>
-                        <th>서비스명</th>
-                        <th>수신 PORT</th>
-                        <th>수신 IP</th>
-                        <th>송신 PORT</th>
-                        <th>기타1</th>
-                        <th>기타2</th>
-                        <th>기타3</th>
-                        <th>기타4</th>
-                        <th>기타5</th>
-                        <th>기타6</th>
-                        <th>기타7</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>클라이언트</td>
-                        <td></td>
-                        <td>10.0.0.1</td>
-                        <td>30001</td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                    <tr>
-                        <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
-                        <td><a href="javascript:;" class="link">A기관 채널6</a></td>
-                        <td>온라인</td>
-                        <td>서버</td>
-                        <td>50001</td>
-                        <td></td>
-                        <td></td>
-                        <td>기타1 내용 기타1 내용</td>
-                        <td>기타2 내용 기타2 내용</td>
-                        <td>기타3 내용 기타3 내용</td>
-                        <td>기타4 내용 기타4 내용</td>
-                        <td>기타5 내용 기타5 내용</td>
-                        <td>기타6 내용 기타6 내용</td>
-                        <td>기타7 내용 기타7 내용</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="list_action">
-            <div class="l">
-                <div class="paging_select">
-                    <div class="input_group">
-                        <!-- 페이지 로드 시 active된 옵션 기준으로 input hidden에 data-id 값 출력, select_selected에 문자 출력 -->
-                        <div class="custom_select">
-                            <input type="hidden">
-                            <button type="button" class="select_selected" onclick="customSelect(this)">15</button>
-                            <div class="options design_scroll" data-simplebar>
-                                <div class="item"><a href="javascript:;" data-id="15" class="active" onclick="customSelectSelect(this)">15</a></div>
-                                <div class="item"><a href="javascript:;" data-id="30" onclick="customSelectSelect(this)">30</a></div>
-                                <div class="item"><a href="javascript:;" data-id="45" onclick="customSelectSelect(this)">45</a></div>
-                                <div class="item"><a href="javascript:;" data-id="50" onclick="customSelectSelect(this)">50</a></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>선택
+                                <!-- 
+                                <label class="checkbox single"><input type="checkbox" class="check_all"><span class="ck_icon"></span></label>
+                                -->
+                            </th>
+                            <th>채널명</th>
+                            <th>프로세스 타입</th>
+                            <th>서비스명</th>
+                            <th>수신 PORT</th>
+                            <th>수신 IP</th>
+                            <th>송신 PORT</th>
+                            <th>기타1</th>
+                            <th>기타2</th>
+                            <th>기타3</th>
+                            <th>기타4</th>
+                            <th>기타5</th>
+                            <th>기타6</th>
+                            <th>기타7</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox"><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" checked><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>클라이언트</td>
+                            <td></td>
+                            <td>10.0.0.1</td>
+                            <td>30001</td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                        <tr>
+                            <td><label class="checkbox single"><input type="checkbox" disabled><span class="ck_icon"></span></label></td>
+                            <td><a href="javascript:;" class="link">A기관 채널6</a></td>
+                            <td>온라인</td>
+                            <td>서버</td>
+                            <td>50001</td>
+                            <td></td>
+                            <td></td>
+                            <td>기타1 내용 기타1 내용</td>
+                            <td>기타2 내용 기타2 내용</td>
+                            <td>기타3 내용 기타3 내용</td>
+                            <td>기타4 내용 기타4 내용</td>
+                            <td>기타5 내용 기타5 내용</td>
+                            <td>기타6 내용 기타6 내용</td>
+                            <td>기타7 내용 기타7 내용</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="list_action">
+                <div class="l">
+                    <div class="paging_select">
+                        <div class="input_group">
+                            <!-- 페이지 로드 시 active된 옵션 기준으로 input hidden에 data-id 값 출력, select_selected에 문자 출력 -->
+                            <div class="custom_select">
+                                <input type="hidden">
+                                <button type="button" class="select_selected" onclick="customSelect(this)">15</button>
+                                <div class="options design_scroll" data-simplebar>
+                                    <div class="item"><a href="javascript:;" data-id="15" class="active" onclick="customSelectSelect(this)">15</a></div>
+                                    <div class="item"><a href="javascript:;" data-id="30" onclick="customSelectSelect(this)">30</a></div>
+                                    <div class="item"><a href="javascript:;" data-id="45" onclick="customSelectSelect(this)">45</a></div>
+                                    <div class="item"><a href="javascript:;" data-id="50" onclick="customSelectSelect(this)">50</a></div>
+                                </div>
                             </div>
                         </div>
+                        <div class="page_status">1-15 of 50</div>
                     </div>
-                    <div class="page_status">1-15 of 50</div>
+                </div>
+                <div class="r">
+                    <div class="paging">
+                        <a href="javascript:;" class="pg first disabled"></a>
+                        <a href="javascript:;" class="pg prev disabled"></a>
+                        <a href="javascript:;" class="pg first"></a>
+                        <a href="javascript:;" class="pg prev "></a>
+                        <a href="javascript:;">1</a>
+                        <a href="javascript:;" class="active">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;" class="pg next"></a>
+                        <a href="javascript:;" class="pg end"></a>
+                        <a href="javascript:;" class="pg next disabled"></a>
+                        <a href="javascript:;" class="pg end disabled"></a>
+                    </div>
                 </div>
             </div>
-            <div class="r">
-                <div class="paging">
-                    <a href="javascript:;" class="pg first disabled"></a>
-                    <a href="javascript:;" class="pg prev disabled"></a>
-                    <a href="javascript:;" class="pg first"></a>
-                    <a href="javascript:;" class="pg prev "></a>
-                    <a href="javascript:;">1</a>
-                    <a href="javascript:;" class="active">2</a>
-                    <a href="javascript:;">3</a>
-                    <a href="javascript:;">4</a>
-                    <a href="javascript:;">5</a>
-                    <a href="javascript:;" class="pg next"></a>
-                    <a href="javascript:;" class="pg end"></a>
-                    <a href="javascript:;" class="pg next disabled"></a>
-                    <a href="javascript:;" class="pg end disabled"></a>
-                </div>
-            </div>
-        </div>
         </div>
         <div class="layer_footer">
             <div class="lf_btns">
@@ -1392,6 +1392,63 @@
 </div>
 <!-- //채널추가 -->
 
+
+<!-- 엑셀업로드 -->
+<div id="excel_upload" class="layer_popup">
+    <div class="layer_box design_scroll" data-simplebar style="max-width:45rem;">
+        <div class="layer_header">
+            <div class="layer_title">엑셀업로드</div>
+            <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
+        </div>
+        <div class="layer_body">
+            <div class="input_group">
+                <label class="file_input">
+                    <input type="file" onchange="handleFileChange(this)">
+                    <span class="file_name">파일을 등록해주세요 </span>
+                    <button type="button" class="file_remove" style="display:none;" onclick="removeFile(this)">파일삭제</button>
+                    <span class="btn btn_lg btn_gray"><img src="../../assets/images/btn_icon_search2.svg">파일선택</span>
+                </label>
+            </div>
+        </div>
+        <div class="layer_footer">
+            <div class="l">
+                <a href="javascript:;" class="down">샘플 파일 다운로드</a>
+            </div>
+            <div class="lf_btns">
+                <button type="button" class="btn btn_lg btn_gray" onclick="closeLayer(this)">닫기</button>
+                <button type="button" class="btn btn_lg btn_submit">등록</button>
+            </div>
+        </div>
+    </div>
+    <span class="layer_bg" onclick="closeLayer(this)"></span>
+    <script>
+        function handleFileChange(inputElement) {
+            const fileInput = inputElement;
+            const fileNameSpan = fileInput.nextElementSibling;
+            const removeButton = fileNameSpan.nextElementSibling;
+    
+            if (fileInput.files.length > 0) {
+                const fileName = fileInput.files[0].name;
+                fileNameSpan.textContent = fileName;
+                removeButton.style.display = 'inline-block';
+            } else {
+                fileNameSpan.textContent = '파일을 등록해주세요';
+                removeButton.style.display = 'none';
+            }
+        }
+    
+        function removeFile(buttonElement) {
+            const removeButton = buttonElement;
+            const fileNameSpan = removeButton.previousElementSibling;
+            const fileInput = fileNameSpan.previousElementSibling;
+    
+            fileInput.value = '';
+            fileNameSpan.textContent = '파일을 등록해주세요';
+            removeButton.style.display = 'none';
+        }
+    </script>
+</div>
+<!-- //엑셀업로드 -->
 
 </body>
 </html>	 
