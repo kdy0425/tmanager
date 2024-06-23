@@ -56,6 +56,7 @@
 #nav > ul > li + li{margin-top:1.2rem;}
 #nav > ul > li > a{display:flex;justify-content: center;align-items: center;min-height:4rem;padding:1rem 1.2rem;color:#fff;font-size:1.4rem;font-weight:700;border-radius:0.6rem;position: relative;transition: all 0.3s;}
 #nav > ul > li > a span{display:none;margin-left:0.8rem;}
+#nav > ul > li > a:before{content:"";display:none;transition:all 0.3s;position:absolute;right:1.2rem;top:50%;margin-top:-0.6rem;width:1.2rem;height:1.2rem;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 1.5L5 5L1.5 8.5' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 #nav > ul > li > ul{max-height: 0;overflow: hidden;padding:0 2.1rem 0 3.4rem;}
 #nav > ul > li > ul > li{}
 #nav > ul > li > ul > li > a{displaY:block;opacity:0.6;font-size:1.3rem;font-weight:500;padding:0.7rem 1.1rem;color:#fff;position: relative;transition: all 0.3s;}
@@ -73,6 +74,8 @@
 #aside.active #nav > ul > li > a{justify-content: start;}
 #aside.active #nav > ul > li > a span{display:block;}
 #aside.active #nav > ul > li.open > ul{max-height: 500px;transition:all 0.5s ;margin-top:1.2rem;}
+#aside.active #nav > ul > li > a:before{display:block;}
+#aside.active #nav > ul > li.open > a:before{transform:rotate(90deg);}
 #aside.active #nav > ul > li > ul{transition:all 0.5s;}
 #content{padding:3rem 2rem 8rem 2rem;}
 .page_title{display:flex;margin-bottom:2rem;}
