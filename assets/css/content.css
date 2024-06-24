@@ -355,7 +355,7 @@ top: 0;transform: translateX(-10px);background: rgb(103 138 249);opacity: 0.75;b
 .table_form input[type="password"]:disabled:focus,
 .table_form input[type="tel"]:disabled:focus,
 .table_form select:disabled:focus,
-.table_form .select_selected:disabled:focus{border:0 !important;outline: none !important;}
+.table_form .select_selected:disabled:focus{border:1px solid #fff !important;outline: none !important;}
 .table_form .custom_select .options{top:3.7rem;}
 
 
