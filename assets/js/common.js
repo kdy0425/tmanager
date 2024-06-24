@@ -687,11 +687,9 @@ document.addEventListener('DOMContentLoaded', function() {
             tr.classList.remove('bg_active');
         }
     }
-
     document.querySelectorAll('input[type="checkbox"].checked_bg_tr').forEach(function(checkbox) {
         updateRowClass(checkbox);
     });
-
     document.addEventListener('change', function(event) {
         if (event.target.matches('input[type="checkbox"].checked_bg_tr')) {
             updateRowClass(event.target);
