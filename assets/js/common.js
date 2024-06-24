@@ -676,3 +676,45 @@ function closeLayer(button) {
     button.closest('.layer_popup').style.display = 'none';
     document.querySelector('html').classList.remove('scroll_hidden');
 }
+
+//체크박스 상위 tr 색변경
+document.addEventListener('DOMContentLoaded', function() {
+    function updateRowClass(checkbox) {
+        const tr = checkbox.closest('tr');
+        if (checkbox.checked) {
+            tr.classList.add('bg_active');
+        } else {
+            tr.classList.remove('bg_active');
+        }
+    }
+
+    document.querySelectorAll('input[type="checkbox"].checked_bg_tr').forEach(function(checkbox) {
+        updateRowClass(checkbox);
+    });
+
+    document.addEventListener('change', function(event) {
+        if (event.target.matches('input[type="checkbox"].checked_bg_tr')) {
+            updateRowClass(event.target);
+        }
+    });
+
+    const observer = new MutationObserver(function(mutationsList) {
+        for (const mutation of mutationsList) {
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === 1) { // Element 노드
+                        const checkboxes = node.querySelectorAll('input[type="checkbox"].checked_bg_tr');
+                        checkboxes.forEach(function(checkbox) {
+                            updateRowClass(checkbox);
+                            checkbox.addEventListener('change', function() {
+                                updateRowClass(checkbox);
+                            });
+                        });
+                    }
+                });
+            }
+        }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+});
