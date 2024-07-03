@@ -669,7 +669,7 @@ window.onload = function() {
 
 //레이어팝업 열고닫기
 function openLayer(target) {
-    document.querySelector(target).style.display = 'block';
+    document.querySelector(target).style.display = 'flex';
     document.querySelector('html').classList.add('scroll_hidden');
 }
 function closeLayer(button) {
