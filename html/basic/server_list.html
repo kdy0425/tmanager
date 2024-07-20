@@ -275,6 +275,18 @@
                                 <div class="card_title">서버 목록</div>
                             </div>
                             <div class="r">
+                                <div class="i_info"><div class="type1">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type2">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type3">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type4">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type5">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type6">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type7">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type8">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type9">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type10">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type11">This popover is used to provide information about this icon.</div></div>
+                                <div class="i_info"><div class="type12">This popover is used to provide information about this icon.</div></div>
                                 <button type="button" class="btn btn_md btn_submit" onclick="openLayer('#server_registration')"><img src="../../assets/images/btn_icon_write.svg">서버등록</button>
                             </div>
                         </div>
@@ -290,7 +302,7 @@
                                             <th>서버명</th>
                                             <th>IP</th>
                                             <th>PORT</th>
-                                            <th>OS 종류</th>
+                                            <th>OS 종류 <div class="i_info"><div class="type7">This popover is used to provide information about this icon.</div></div></th>
                                             <th>설정</th>
                                             <th>기타1</th>
                                             <th>기타2</th>
@@ -303,11 +315,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="active">
                                             <td><a href="javascript:;" class="link">서버1</a></td>
                                             <td>192.168.0.1</td>
                                             <td>8088</td>
-                                            <td>리눅스</td>
+                                            <td>리눅스 <div class="i_info"><div class="type5">This popover is used to provide information about this icon.</div></div></td>
                                             <td>
                                                 <button type="button" class="btn btn_sm btn_gray" onclick="openLayer('#server_modify')"><img src="../../assets/images/btn_icon_modify.svg">수정</button>
                                                 <button type="button" class="btn btn_sm btn_gray" onclick="openLayer('#server_remove')"><img src="../../assets/images/btn_icon_remove.svg">삭제</button>
@@ -790,7 +802,7 @@
 
 <!-- 서버등록 -->
 <div id="server_registration" class="layer_popup">
-    <div class="layer_box design_scroll" data-simplebar style="max-width:50rem;">
+    <div class="layer_box design_scroll" style="max-width:50rem;">
         <div class="layer_header">
             <div class="layer_title">서버 등록</div>
             <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
@@ -859,7 +871,7 @@
 
 <!-- 서버수정 -->
 <div id="server_modify" class="layer_popup">
-    <div class="layer_box design_scroll" data-simplebar style="max-width:50rem;">
+    <div class="layer_box design_scroll" style="max-width:50rem;">
         <div class="layer_header">
             <div class="layer_title">서버 수정</div>
             <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
@@ -929,7 +941,7 @@
 
 <!-- 서버삭제 -->
 <div id="server_remove" class="layer_popup">
-    <div class="layer_box design_scroll" data-simplebar style="max-width:50rem;">
+    <div class="layer_box design_scroll" style="max-width:50rem;">
         <div class="layer_header">
             <div class="layer_title">서버 삭제</div>
             <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
@@ -1001,7 +1013,7 @@
 
 <!-- 채널추가 -->
 <div id="chanel_registration" class="layer_popup">
-    <div class="layer_box design_scroll" data-simplebar style="max-width:75rem;">
+    <div class="layer_box design_scroll" style="max-width:75rem;">
         <div class="layer_header">
             <div class="layer_title">채널 추가</div>
             <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>
@@ -1499,7 +1511,7 @@
 
 <!-- 엑셀업로드 -->
 <div id="excel_upload" class="layer_popup">
-    <div class="layer_box design_scroll" data-simplebar style="max-width:45rem;">
+    <div class="layer_box design_scroll" style="max-width:45rem;">
         <div class="layer_header">
             <div class="layer_title">엑셀업로드</div>
             <button type="button" class="layer_close" onclick="closeLayer(this)">팝업 닫기</button>

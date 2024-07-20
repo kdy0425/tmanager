@@ -671,6 +671,15 @@ window.onload = function() {
 function openLayer(target) {
     document.querySelector(target).style.display = 'flex';
     document.querySelector('html').classList.add('scroll_hidden');
+	const layerBox = document.querySelector(target).querySelector('.layer_box');
+	const windowHeight = window.innerHeight;
+
+	if (layerBox.offsetHeight >= (windowHeight - 25)) {
+		layerBox.setAttribute('data-simplebar', '');
+		new SimpleBar(layerBox);
+	} else {
+		layerBox.removeAttribute('data-simplebar');
+	}
 }
 function closeLayer(button) {
     button.closest('.layer_popup').style.display = 'none';
