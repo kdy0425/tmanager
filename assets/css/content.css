@@ -227,6 +227,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #BABFCF
 .table_list table tbody td{}
 .table_list table tbody td .btn{margin:1px;width: max-content;}
 .table_list table tbody tr{position: relative;}
+.table_list table tbody tr.active td{background-color: #F7F8FC;}
 .table_list table tbody tr.active td:first-child:before{content:"";position: absolute;left:0;top:0;width:100%;height:2px;background-color: #4670EC;}
 .table_list table tbody tr.active td:first-child:after{content:"";position: absolute;left:0;top:0;width:2px;height:100%;background-color: #4670EC;}
 .table_list table tbody tr.active td:last-child:before{content:"";position: absolute;right:0;top:0;width:2px;height:100%;background-color: #4670EC;}
@@ -260,7 +261,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #BABFCF
 .status_text.red{color:#F64665;background-color: #f0dde1;}
 .status_text.green{color:#00B07B;background-color: #ECF9F5;}
 .status_text.blue{color:#537BED;background-color: #F2F6FF;}
-.status_text2{display:inline-block;padding:0.35rem 0.5rem;border-radius:0.3rem;font-size:1.2rem;font-weight:500;font-size:1rem;padding:0.2rem 0.4rem;border-radius:3rem;min-width:3.6rem;text-align: center;}
+.status_text2{display:inline-block;margin-right:0.4rem;padding:0.35rem 0.5rem;border-radius:0.3rem;font-size:1.2rem;font-weight:500;font-size:1rem;padding:0.2rem 0.4rem;border-radius:3rem;min-width:3.6rem;text-align: center;}
 .status_text2.all{color:#fff;background-color: #081435;}
 .status_text2.on{color:#fff;background-color: #4670EC;}
 .status_text2.stop {color:#fff;background-color: #BABFCF;}
