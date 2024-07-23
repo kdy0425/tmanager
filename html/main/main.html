@@ -1064,12 +1064,12 @@ function adjustTableHeights() {
 
     main_slider_tables.forEach(function(table) {
         const serverInfoHeight = table.closest('.server_slide_item').querySelector('.server_info').offsetHeight;
-        const tableHeight = windowHeight - headerHeight - footerHeight - serverInfoHeight - 84; //84 -> #content.main_content의 상하 패딩 82px +  header,footer,server_info의 소수점자리 오차 여유분 2px
+        const tableHeight = windowHeight - headerHeight - footerHeight - serverInfoHeight - 82; //82 -> #content.main_content의 상하 패딩 80px +  header,footer,server_info의 소수점자리 오차 여유분 2px
         table.style.height = `${tableHeight}px`;
         table.style.maxHeight = `${tableHeight}px`;
     });
     server_slide_item.forEach(function(item) {
-        const itemHeight = windowHeight - headerHeight - footerHeight - 84; //84 -> #content.main_content의 상하 패딩 82px +  header,footer,server_info의 소수점자리 오차 여유분 2px
+        const itemHeight = windowHeight - headerHeight - footerHeight - 82; //82 -> #content.main_content의 상하 패딩 80px +  header,footer,server_info의 소수점자리 오차 여유분 2px
         item.style.minHeight = `${itemHeight}px`;
         if (item.innerHTML.trim() === '') {
             item.classList.add('empty');

@@ -232,7 +232,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #BABFCF
 .table_list table tbody tr.active td:first-child:after{content:"";position: absolute;left:0;top:0;width:2px;height:100%;background-color: #4670EC;}
 .table_list table tbody tr.active td:last-child:before{content:"";position: absolute;right:0;top:0;width:2px;height:100%;background-color: #4670EC;}
 .table_list table tbody tr.active td:last-child:after{content:"";position: absolute;left:0;bottom:0;width:100%;height:2px;background-color: #4670EC;}
-.table_list table tbody .bg_red td{background-color: #FFF2F5;}
+.table_list table tbody .bg_red td{background-color: #FFF2F5;color:#ED516D;}
 .thead_fixed{overflow-y: auto;}
 .thead_fixed table thead tr{position: sticky;top: 0;z-index: 1;}
 .thead_fixed table thead th{}
@@ -252,7 +252,7 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #BABFCF
 .bg_active td{background-color: #F7F8FC !important;}
 .link{color:#3562E4;text-decoration: underline;}
 .link:hover{text-decoration: underline;}
-.status_circle{font-weight:500;font-size:1.2rem;display: inline-block;padding-left: 1.5rem;position: relative;white-space: nowrap;vertical-align: middle;}
+.status_circle{font-weight:500;font-size:1.2rem;display: inline-block;padding-left: 1.5rem;position: relative;white-space: nowrap;vertical-align: middle;color:#333;}
 .status_circle:before{content:"";position: absolute;left:0.2rem;top:50%;margin-top:-0.5rem;width:0.8rem;height:0.8rem;border-radius: 50%;background-color: #ccc;}
 .status_circle.green:before{background-color: #00B07B;}
 .status_circle.red:before{background-color: #F64665;}
@@ -454,7 +454,7 @@ top: 0;transform: translateX(-10px);background: rgb(103 138 249);opacity: 0.75;b
 .server_info .service .cnt .item .status_text2{}
 .server_info .service .cnt .item .num{margin-top:1rem;color:#081435;font-size:2.4rem;font-weight:600;}
 
-#content.main_content{padding:4.8rem 4.8rem 3.4rem;}
+#content.main_content{padding:4rem 4.8rem;}
 .main_wrap{position: relative;}
 .main_slider{overflow:hidden;}
 .main_wrap .swiper-button-prev,
