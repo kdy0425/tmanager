@@ -226,7 +226,9 @@ html .simplebar-horizontal .simplebar-scrollbar:before{background-color: #BABFCF
 .table_list table tbody td{background-color: #fff;padding:0.6rem 1.2rem;text-align: left;height:3.6rem;vertical-align: middle;border-bottom: 1px solid #EAECF3;}
 .table_list table tbody td{}
 .table_list table tbody td .btn{margin:1px;width: max-content;}
-.table_list table tbody tr{position: relative;}
+.table_list table tbody tr{position: relative;background-color:#fff;}
+.table_list table tbody tr.active{background-color: #F7F8FC;}
+.table_list table tbody tr.bg_red{background-color: #FFF2F5;}
 .table_list table tbody tr.active td{background-color: #F7F8FC;}
 .table_list table tbody tr.active td:first-child:before{content:"";position: absolute;left:0;top:0;width:100%;height:2px;background-color: #4670EC;}
 .table_list table tbody tr.active td:first-child:after{content:"";position: absolute;left:0;top:0;width:2px;height:100%;background-color: #4670EC;}
